@@ -72,8 +72,8 @@ if __name__ == '__main__':
     else:
         shutil.move(sms_path + os.path.sep + sms_filename, back_path)
 
-    #os.environ['date_crbt']=str(date_crbt)
-    #os.environ['crbt_xlsxname']=str(crbt_xlsxname)
-    #os.environ['sms_xlsxname']=str(sms_xlsxname)
-    #tar_cmd='tar zcf  tj${date_crbt}.tar.gz $crbt_xlsxname $sms_xlsxname'
-    #os.system(tar_cmd)
+    os.environ['date_crbt']=str(date_crbt)
+    os.environ['crbt_xlsxname']=str(crbt_xlsxname)
+    os.environ['sms_xlsxname']=str(sms_xlsxname)
+    tar_cmd='tar zcf  tj${date_crbt}.tar.gz $crbt_xlsxname $sms_xlsxname'
+    os.system(tar_cmd)
